@@ -50,13 +50,14 @@
         .title-visual {
             text-align: center;
             margin-bottom: 30px;
+            margin-top: 20px; /* Added gap between title and image */
         }
         .title-visual img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 800px; /* Increased size for the qdt-visual.png */
+            width: 800px;
         }
         .details {
             background-color: #ecf0f1;
@@ -77,15 +78,26 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             margin-left: 20px;
         }
+        .participants {
+            text-align: center; /* Centering the entire participants section */
+        }
         .participants ul {
-            list-style-type: none;
-            padding: 0;
+            list-style: none;
+            padding-left: 0;
         }
         .participants ul li {
             font-size: 1.2em;
             color: #34495e;
             margin: 10px 0;
             font-weight: 600;
+        }
+        .participants ul li:before {
+            content: '\2022'; /* Unicode for bullet point */
+            color: #34495e;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
         .map-section {
             margin-top: 30px;
@@ -126,20 +138,33 @@
                     <h2>Workshop Information</h2>
                     <p><strong>Dates:</strong> Thursday 24 October - Friday 25 October 2024</p>
                     <p><strong>Venue:</strong> Read Hall, University of Exeter</p>
+                    <p>The goal of this workshop is to gather quantum researchers in the UK to discuss the development of quantum simulators based on tensor networks, and the design of effective digital twins that mimic the connectivity of current devices. The programme includes talks presenting current research, brainstorming sessions, and talks tentatively scheduled for 20 minutes each.</p>
                 </div>
                 <!-- Image of Reed Hall on the right -->
                 <img src="reed-hall.jpg" alt="Reed Hall">
             </div>
 
-            <!-- Participants List -->
+            <!-- List of Invited Participants -->
             <div class="participants">
-                <h2>Invited Participants</h2>
+                <h2>List of Invited Participants</h2>
                 <ul>
-                    <li>Invited Speaker 1</li>
-                    <li>Invited Speaker 2</li>
-                    <li>Invited Speaker 3</li>
-                    <li>Invited Speaker 4</li>
-                    <li>Invited Speaker 5</li>
+                    <li>Ivan Rungger (NPL; co-organiser)</li>
+                    <li>Oleksandr Kyriienko (Univ. Exeter; co-organiser)</li>
+                    <li>Lachlan Lindoy (NPL; co-organiser)</li>
+                    <li>Madhumita Sarkar (Univ. Exeter; scientific secretary)</li>
+                    <li>Andrew Daley (Univ. Oxford; <em>tbc</em>)</li>
+                    <li>Andrew Green (UCL; <em>tbc</em>)</li>
+                    <li>Ashley Montanaro (Phasecraft and Univ. Bristol; <em>tbc</em>)</li>
+                    <li>Christopher Ballance (Oxford Ionics; <em>tbc</em>)</li>
+                    <li>Elham Kashefi (NQCC and Univ. Edinburgh, QSL; <em>tbc</em>)</li>
+                    <li>Natalia Ares (Oxford Univ.; <em>tbc</em>)</li>
+                    <li>Jonathan Pritchard (Univ. Strathclyde; <em>tbc</em>)</li>
+                    <li>Peter Leek (Oxford Quantum Circuits; <em>tbc</em>)</li>
+                    <li>Petros Wallden (Univ. Edinburgh and QSL; <em>tbc</em>)</li>
+                    <li>Thorsten Wahl (Cambridge Univ.; <em>tbc</em>)</li>
+                    <li>Ulrich Schneider (Cambridge Univ.; <em>tbc</em>)</li>
+                    <li>Chukwudubem Umeano (Univ. Exeter)</li>
+                    <li>Yannic Rath (NPL)</li>
                 </ul>
             </div>
 
