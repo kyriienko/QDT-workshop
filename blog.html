@@ -88,6 +88,20 @@
             padding: 20px;
             text-align: left;
         }
+        .img-left {
+            float: left;
+            margin: 0 20px 20px 0;
+            width: 30%;
+            height: auto;
+            object-fit: contain;
+        }
+        .img-right {
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 30%;
+            height: auto;
+            object-fit: contain;
+        }
         .details img {
             width: 35%;
             height: auto;
@@ -153,24 +167,24 @@
 	    <div class="blog-details">
               <div class="text">
                 <h2>Workshop Summary Blog</h2>
-                <p>Time flies by, and our workshop on <b>"Quantum Digital Twins" (QDT)</b> has now left memories of lovely quantum discussions in Exeter. We set out this workshop with a distinct mission: to brainstorm how can we bridge the gap between the evolving quantum hardware platforms and the software needed to support their full potential. Quantum computing devices are increasingly diverse, with varying connectivity, topologies, and noise characteristics. This diversity demands a <i>tailored approach</i>, where devices and software mirror each other in form and function — a concept at the core of our workshop. <img src="pictures/img1.jpg" style="width: 25%; height: auto; object-fit: contain;"></p>
+                <p>Time flies by, and our workshop on <b>"Quantum Digital Twins" (QDT)</b> has now left memories of lovely quantum discussions in Exeter. We set out this workshop with a distinct mission: to brainstorm how can we bridge the gap between the evolving quantum hardware platforms and the software needed to support their full potential. Quantum computing devices are increasingly diverse, with varying connectivity, topologies, and noise characteristics. This diversity demands a <i>tailored approach</i>, where devices and software mirror each other in form and function — a concept at the core of our workshop. <img src="pictures/img1.jpg" class="img-right"></p>
               </div>
 	    </div>
 
     <div class="blog-content">
-      <p>To tackle this challenge, we assembled a multidisciplinary group of experts at the historic Reed Hall in Exeter. The setting was perfect for two days of deep dive into the latest advancements and the future of quantum hardware-software integration. Attendees spanned over a wide range of research and industry positions, working in various subjects — from the tensor network architects and algorithm developers to specialists in quantum hardware platforms including cold atoms, Rydberg lattices, trapped ions, and superconducting circuits.<img src="pictures/img3.jpg" style="width: 35%; height: auto; object-fit: contain;"></p>
-      <p>The workshop kicked off with presentations highlighting the state-of-the-art developments in these fields. This set the stage for a central question: how can we define a quantum digital twin? Recognizing that this is an unconventional term, we aimed to clarify its essence and identify when and why twinning is essential.<img src="pictures/img2.jpg" style="width: 35%; height: auto; object-fit: contain;"></p>
+      <p>To tackle this challenge, we assembled a multidisciplinary group of experts at the historic Reed Hall in Exeter. The setting was perfect for two days of deep dive into the latest advancements and the future of quantum hardware-software integration. Attendees spanned over a wide range of research and industry positions, working in various subjects — from the tensor network architects and algorithm developers to specialists in quantum hardware platforms including cold atoms, Rydberg lattices, trapped ions, and superconducting circuits.<img src="pictures/img3.jpg" class="img-left"></p>
+      <p>The workshop kicked off with presentations highlighting the state-of-the-art developments in these fields. This set the stage for a central question: how can we define a quantum digital twin? Recognizing that this is an unconventional term, we aimed to clarify its essence and identify when and why twinning is essential.<img src="pictures/img2.jpg" class="img-right"></p>
       <p>The <b>first day</b> culminated in a roundtable discussion, which explored this idea in depth. It became evident that QDTs are <em>application-specific</em>. For some use cases, the focus could be on accurately mimicking the microscopic model of a device, including developing sophisticated noise models and <i>learning</i> them from data. This approach is being pursued by several companies and academic groups. When scaling up, additional limitations arise which preclude detailed modelling, but prompts for modelling able to give predictions at large system size. In this case, the conversation shifted towards emulators — software-based models that can capture essential features of quantum devices with specified topology.</p>
-      <p>In <b>day two</b> we followed up with talks on various simulation methods, and for the second roundtable shifted gears towards application-oriented teamwork. In the <em>unconference</em> style, we formed four teams, gathered by proposed subjects, and the aim of developing a tentative strategy for building quantum digital twins. Each team focused on a key application of QDTs. <img src="pictures/img4.jpg" style="width: 35%; height: auto; object-fit: contain;"></p>
+      <p>In <b>day two</b> we followed up with talks on various simulation methods, and for the second roundtable shifted gears towards application-oriented teamwork. In the <em>unconference</em> style, we formed four teams, gathered by proposed subjects, and the aim of developing a tentative strategy for building quantum digital twins. Each team focused on a key application of QDTs. <img src="pictures/img4.jpg" class="img-right"></p>
       <p><strong>1. Algorithmic Development and Testing</strong>: This team concentrated on large-scale circuit simulation which is noiseless, but requires knowledge of the system at the architectural level for optimal performed. They proposed a modular approach where each segment of a digital twin could be independently implemented, while the complete circuit would still require quantum hardware for final validation.</p>
       <p><strong>2. Quantum Simulation of Condensed Matter</strong>: Driven by applications, this team suggested addressing models like the Fermi-Hubbard, and setting relevant targets for the community. The key suggestion here was to compile a database of classical benchmarks to map out areas where quantum computing could bring a real advantage.</p>
       <p><strong>3. Advanced Noise Modelling</strong>: This team’s focus was on the noisy system emulation and model building. The crucial idea here was to simulate not only small-scale devices but also extend noise modelling to larger systems using a combination of tensor networks with environment (system-bath coupling).</p>
       <p><strong>4. Modular Hardware Integration</strong>: This team explored the possibility of merging different hardware platforms to create versatile quantum twins, enabling better testing and validation of various workflows. They have identified a bold question: Can we use different hardware platforms interchangeably in the process of twinning? </p>
-	<p><img src="pictures/img6.jpg" style="width: 40%; height: auto; object-fit: contain;"></p>
+	<p><img src="pictures/img6.jpg" class="img-right" style="width: 40%; height: auto; object-fit: contain;"></p>
       <p>Throughout these discussions, we identified future directions for advancing QDTs. One key takeaway was the potential to leverage improved tensor network techniques or other scalable approaches to handle noisy representations and support large-scale applications. We certainly need more tools to achieve this, and suitable software packages. Second, we need to understand how to marry QDTs and advances in quantum machine learning, specifically on quantum data.</p>
-      <p>Reflecting on the workshop, it was a great opportunity to interact with peers and <i>brainstorm</i> together in a less conventional setting (continuing all the way to Turks Head!) One of the memories goes to the workshop dinner at Hotel du Vin, with continuing “buzz” of physics discussions in a great company. The collective insights gathered provided a foundation for further refining the concept of quantum digital twins and paving the way for their practical applications in the near future. <img src="pictures/img5.jpg" style="width: 40%; height: auto; object-fit: contain;"></p>
+      <p>Reflecting on the workshop, it was a great opportunity to interact with peers and <i>brainstorm</i> together in a less conventional setting (continuing all the way to Turks Head!) One of the memories goes to the workshop dinner at Hotel du Vin, with continuing “buzz” of physics discussions in a great company. The collective insights gathered provided a foundation for further refining the concept of quantum digital twins and paving the way for their practical applications in the near future. <img src="pictures/img5.jpg" class="img-right" style="width: 40%; height: auto; object-fit: contain;"></p>
       <p>And as we wrap up this first chapter, the journey continues towards establishing QDTs as a useful and at places indispensable tool in the quantum computing ecosystem. Stay tuned for future developments — and we certainly look forward to next chapter of this evolving community effort!</p>
-      <p><small>Words by Oleksandr Kyriienko</small></p>
+      <p><small>_words by Oleksandr Kyriienko</small></p>
     </div>
 
         </div>
