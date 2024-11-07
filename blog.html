@@ -84,6 +84,13 @@
         .blog-details .text {
             max-width: 100%;
         }
+        .blog-details .img-right {
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 25%;
+            height: auto;
+            object-fit: contain;
+        }
         .blog-content {
             padding: 20px;
             text-align: left;
@@ -175,7 +182,7 @@
       <p>To tackle this challenge, we assembled a multidisciplinary group of experts at the historic Reed Hall in Exeter. The setting was perfect for two days of deep dive into the latest advancements and the future of quantum hardware-software integration. Attendees spanned over a wide range of research and industry positions, working in various subjects — from the tensor network architects and algorithm developers to specialists in quantum hardware platforms including cold atoms, Rydberg lattices, trapped ions, and superconducting circuits.<img src="pictures/img3.jpg" class="img-left"></p>
       <p>The workshop kicked off with presentations highlighting the state-of-the-art developments in these fields. This set the stage for a central question: how can we define a quantum digital twin? Recognizing that this is an unconventional term, we aimed to clarify its essence and identify when and why twinning is essential.<img src="pictures/img2.jpg" class="img-right"></p>
       <p>The <b>first day</b> culminated in a roundtable discussion, which explored this idea in depth. It became evident that QDTs are <em>application-specific</em>. For some use cases, the focus could be on accurately mimicking the microscopic model of a device, including developing sophisticated noise models and <i>learning</i> them from data. This approach is being pursued by several companies and academic groups. When scaling up, additional limitations arise which preclude detailed modelling, but prompts for modelling able to give predictions at large system size. In this case, the conversation shifted towards emulators — software-based models that can capture essential features of quantum devices with specified topology.</p>
-      <p>In <b>day two</b> we followed up with talks on various simulation methods, and for the second roundtable shifted gears towards application-oriented teamwork. In the <em>unconference</em> style, we formed four teams, gathered by proposed subjects, and the aim of developing a tentative strategy for building quantum digital twins. Each team focused on a key application of QDTs. <img src="pictures/img4.jpg" class="img-right"></p>
+      <p>In <b>day two</b> we followed up with talks on various simulation methods, and for the second roundtable shifted gears towards application-oriented teamwork. In the <em>unconference</em> style, we formed four teams, gathered by proposed subjects, and the aim of developing a tentative strategy for building quantum digital twins. Each team focused on a key application of QDTs. <img src="pictures/img4.jpg" class="img-left"></p>
       <p><strong>1. Algorithmic Development and Testing</strong>: This team concentrated on large-scale circuit simulation which is noiseless, but requires knowledge of the system at the architectural level for optimal performed. They proposed a modular approach where each segment of a digital twin could be independently implemented, while the complete circuit would still require quantum hardware for final validation.</p>
       <p><strong>2. Quantum Simulation of Condensed Matter</strong>: Driven by applications, this team suggested addressing models like the Fermi-Hubbard, and setting relevant targets for the community. The key suggestion here was to compile a database of classical benchmarks to map out areas where quantum computing could bring a real advantage.</p>
       <p><strong>3. Advanced Noise Modelling</strong>: This team’s focus was on the noisy system emulation and model building. The crucial idea here was to simulate not only small-scale devices but also extend noise modelling to larger systems using a combination of tensor networks with environment (system-bath coupling).</p>
